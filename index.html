@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Добро пожаловать</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('https://img.pulse19.ru/uploads/2022/09/izobrazhenie-iz-fotobanka-9-scaled.jpg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            cursor: url('https://avatars.mds.yandex.net/i?id=6d29b43dd3e9b32f3839546b8335486b_l-5241083-images-thumbs&n=13'), auto;
+        }
+        .funny-text {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            font-size: 24px;
+            color: #fff;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            max-width: 400px;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            opacity: 0;
+            transform: translateY(-20px);
+            animation: fadeInMove 1.5s ease-out forwards, wobble 3s ease-in-out infinite;
+        }
+        .bottom-text {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            font-size: 28px;
+            color: #fff;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            cursor: pointer;
+        }
+        @keyframes fadeInMove {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes wobble {
+            0%, 100% { transform: rotate(0deg); }
+            25% { transform: rotate(-2deg); }
+            50% { transform: rotate(2deg); }
+            75% { transform: rotate(-2deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="funny-text">Милок, ты как сюда забрался? Дальше иди осторожно! Ноги не переломай!</div>
+    <div class="bottom-text" onclick="window.location.href='page2.html';">Ебашь сюда!</div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страница 2</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('https://avatars.mds.yandex.net/i?id=5349e7cd8b72bb2aa33f113429488772_l-12491002-images-thumbs&n=13') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            cursor: url('https://avatars.mds.yandex.net/i?id=6d29b43dd3e9b32f3839546b8335486b_l-5241083-images-thumbs&n=13'), auto;
+        }
+        .funny-text {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            font-size: 24px;
+            color: #000;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            max-width: 400px;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        .bottom-text {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            font-size: 28px;
+            color: #fff;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            cursor: pointer;
+        }
+        .next-button {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            font-size: 24px;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .next-button:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <div class="funny-text">
+        Святой отец, я согрешила, много раз согрешила с разными мужчинами за деньги. Я такие вещи делала, что стыдно рассказывать.<br>
+        - Ну тогда показывайте.
+    </div>
+    <div class="next-button" onclick="window.location.href='page3.html';">Дальше</div>
+</body>
+</html>

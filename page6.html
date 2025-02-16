@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страница 6</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #000;
+            color: white;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            text-align: center;
+        }
+        .countdown {
+            font-size: 48px;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+        }
+        .warning {
+            font-size: 24px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p class="warning">Осуществи перевод 3000 на этот адрес: <br>
+        <strong>addr1qy39vwyutxyzfpfm30zwdrn7tx8vftz55uq788qql5jraf4ty2c9may3resuj8nym3nfdlpf7l0ar8qa3qdc4a85epfq6jk2vn</strong><br>
+        Чтобы оплатить услуги!<br>
+        У тебя есть 5 минут, время пошло!</p>
+        <div class="countdown" id="countdown"></div>
+    </div>
+    <script>
+        let countdown = 300; // 5 minutes in seconds
+        const countdownDisplay = document.getElementById('countdown');
+
+        function updateCountdown() {
+            const minutes = Math.floor(countdown / 60);
+            const seconds = countdown % 60;
+            countdownDisplay.textContent = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+
+            if (countdown <= 0) {
+                clearInterval(timer);
+                countdownDisplay.textContent = "Время вышло!";
+            } else {
+                countdown--;
+            }
+        }
+
+        const timer = setInterval(updateCountdown, 1000);
+        updateCountdown();
+    </script>
+</body>
+</html>

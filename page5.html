@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страница 5</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('https://www.thoughtco.com/thmb/lNfTlaA6bw8HPNXSuiozodTnxSg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/high-angle-view-of-paper-currencies-998094474-5bff0fa3c9e77c005103423f.jpg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+        .funny-text {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            font-size: 24px;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            max-width: 600px;
+        }
+        .instruction-link {
+            color: yellow;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .next-button {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            font-size: 24px;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin-top: 30px;
+        }
+        .next-button:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <div class="funny-text">
+        Доступ на данный сайт был платный!<br>
+        Переведи деньги, следуя <span class="instruction-link" onclick="window.location.href='page6.html';">инструкции</span>
+    </div>
+    <button class="next-button" onclick="window.location.href='page6.html';">Перейти к инструкции</button>
+</body>
+</html>
